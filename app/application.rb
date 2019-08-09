@@ -3,8 +3,6 @@ class Application
 @@items = [Item.new("Apples"),
             Item.new("Carrots"),
             Item.new("Pears")]
-            
-@@price = ["£10","£5","£10"]
 
 def call(env)
   resp = Rack::Response.new
