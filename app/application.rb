@@ -9,5 +9,5 @@ def call(env)
   req = Rack::Response.new(env)
   
   if req.path.match(/item/)
-      item = req.params["item"]
-      if @@items.include? item
+      song_title = req.path.split("/songs/").last #turn /songs/Sorry into Sorry
+      song = @@songs.find{|s| s.title == song_title}
