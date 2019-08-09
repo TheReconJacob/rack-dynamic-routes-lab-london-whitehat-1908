@@ -13,6 +13,7 @@ def call(env)
       if item = @@items.find{|s| s.name == item_name}
         resp.write item.price
       else
+        resp.status = 400
     end
     
     resp.finish
