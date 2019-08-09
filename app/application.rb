@@ -14,6 +14,7 @@ def call(env)
         resp.write item.price
       else
         resp.status = 400
+      end
     end
     
     resp.finish
