@@ -14,5 +14,7 @@ def call(env)
       
       resp.write item.name
     end
+    
     resp.finish
   end
+end
