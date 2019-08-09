@@ -14,7 +14,7 @@ def call(env)
         resp.write item.price
       else
         resp.status = 400
-        resp.write 
+        resp.write "item not found"
       end
     end
     
