@@ -18,7 +18,7 @@ def call(env)
       end
     else
         resp.status = 404
-        resp.write 
+        resp.write "route not found"
     end
     
     resp.finish
