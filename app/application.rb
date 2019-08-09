@@ -12,6 +12,7 @@ def call(env)
       item_name = req.path.split("/items/").last
       if item = @@items.find{|s| s.name == item_name}
         resp.write item.price
+      else
     end
     
     resp.finish
