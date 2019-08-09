@@ -12,11 +12,11 @@ def call(env)
         resp.write item.price
       else
         resp.status = 400
-        resp.write "item not found"
+        resp.write "Item not found"
       end
     else
       resp.status = 404
-      resp.write "route not found"
+      resp.write "Route not found"
     end
     
     resp.finish
