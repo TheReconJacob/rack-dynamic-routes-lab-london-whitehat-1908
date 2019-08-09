@@ -3,6 +3,8 @@ class Application
 @@items = [Item.new("Apples"),
             Item.new("Carrots"),
             Item.new("Pears")]
+            
+@@price = ["£10","£5","£10"]
 
 def call(env)
   resp = Rack::Response.new
@@ -14,7 +16,7 @@ def call(env)
       
       resp.write item.name
   elsif req.path.match(/price/)
-      price_item 
+      price = 
     end
     
     resp.finish
