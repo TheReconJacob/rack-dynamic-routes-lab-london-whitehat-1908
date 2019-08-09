@@ -16,6 +16,9 @@ def call(env)
         resp.status = 400
         resp.write "item not found"
       end
+    else
+        resp.status = 404
+        resp.write 
     end
     
     resp.finish
